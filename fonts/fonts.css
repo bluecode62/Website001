@@ -1,0 +1,81 @@
+/*나눔명조*/
+
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NanumMyeongjo'),
+        url('NanumMyeongjo.woff2') format('woff2'), 
+        url('NanumMyeongjo.woff') format('woff'),
+        url('NanumMyeongjo.ttf') format('truetype'),
+        url('NanumMyeongjo.otf') format('opentype'),
+        url('NanumMyeongjo.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 700;
+    src: local('NanumMyeongjo'),
+        url('NanumMyeongjoRegular.woff2') format('woff2'), 
+        url('NanumMyeongjoRegular.woff') format('woff'),
+        url('NanumMyeongjoRegular.ttf') format('truetype'),
+        url('NanumMyeongjoRegular.otf') format('opentype'),
+        url('NanumMyeongjoRegular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NanumMyeongjo'),
+        url('NanumMyeongjoBold.woff2') format('woff2'), 
+        url('NanumMyeongjoBold.woff') format('woff'),
+        url('NanumMyeongjoBold.ttf') format('truetype'),
+        url('NanumMyeongjoBold.otf') format('opentype'),
+        url('NanumMyeongjoBold.eot') format('embedded-opentype');
+}
+
+/*한솜바람*/
+@font-face {
+    font-family:'HSBOMBARAM';
+    font-style: normal;
+    font-weight: 700;
+    src: local('RIDIBatang'),
+        url('HSBOMBARAM3.0_REGULAR.OTF') format('opentype');
+}
+@font-face {
+    font-family:'HSBOMBARAM';
+    font-style: normal;
+    font-weight: 900;
+    src: local('RIDIBatang'),
+        url('HSBOMBARAM3.0_세로쓰기전용_VERTICAL_REGULAR.OTF') format('opentype');
+}
+
+/*넥슨*/
+@font-face {
+    font-family:'NEXONLV2Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: local('NEXONLV2Gothic'),
+        url('NEXON LV2 GOTHIC OTF.OTF') format('opentype'),
+        url('NEXON LV2 GOTHIC.TTF') format('truetype')
+        }
+
+@font-face {
+    font-family:'NEXONLV2Gothic';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NEXONLV2Gothic'),
+        url('NEXON LV2 GOTHIC OTF BOLD.OTF') format('opentype');
+}
+
+/*나눔바름*/
+@font-face {
+    font-family:'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NEXONLV2Gothic'),
+        url('NANUMBARUNGOTHIC.TTF') format('opentype');
+}

@@ -1,0 +1,384 @@
+@charset "utf-8";
+/*메인슬라이더*/
+.mainSlider{
+    width:100%;
+    height:960px;
+    position:relative;
+    overflow:hidden;
+}
+.mainSlider img{
+    position:absolute;
+    margin-left:-960px;
+    left:50%;
+}
+
+/*슬라이더문구*/
+.SliderTxt{
+    position:absolute;
+    width:570px;
+    height:500px;
+    padding:230px 50px;
+    background-color:#6b011f;
+    font-family:'NEXONLV2Gothic';
+    font-weight:800;
+    color:#fff;
+    font-size:25px;
+    text-align:left;
+}
+.SliderTxt{}
+
+.SliderTxt span,.viewBtn,.brand{
+    display:block;
+}
+
+.brand,.viewBtn{
+    font-family:'HSBOMBARAM';
+}
+.SliderTxt>span:nth-child(2)::after{
+    content:'New';
+    font-family:'HSBOMBARAM';
+    font-size:14px;
+    margin-left:3px;
+    color:yellow;
+}
+
+.bigTxt{
+    margin:100px 0 0 0;
+    font-size:55px;
+}
+.bigTxt span{
+    margin-top:10px;
+}
+.bigTxt .smallTxt{
+    font-size:20px;
+    line-height:15px;
+    margin-top:-15px;
+}
+.bigTxt .smallTxt .smallWord{
+    display:inline-block;
+}
+.smallTxt span:nth-child(2)::after{
+    content:'Pick';
+    font-family:'HSBOMBARAM';
+    font-size:20px;
+}
+.viewBtn{
+    width:160px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:15px;
+    border:1px solid #fff;
+    margin:250px 0 0 0;
+}
+.viewBtn a{
+    color:#fff;
+    display:block;
+    width:100%;
+    transition:all 0.5s;
+}
+
+.viewBtn a:hover{
+    background:#fff;
+    color:#000;
+}
+
+/*메인컨텐츠01*/
+.mainCon01{
+    padding:20px 0;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+.mainTit{
+    display:inline-block;
+    font-family:'HSBOMBARAM';
+    font-size:70px;
+    border-bottom:1px solid #000;
+}
+.con01List{}
+.con01List li{
+    display:inline-block;
+    float:left;
+    margin:50px;
+    padding-left:10px;
+    overflow:hidden;
+    box-sizing:border-box;
+    transition:all 0.3s;
+}
+/*후버*/
+.con01List li:hover{
+    box-shadow:10px 5px 10px #ccc3c3;
+}
+
+.con01List li img{
+    display:block;
+}
+
+.InfoTxt{
+    margin:30px;
+    font-family:'NEXONLV2Gothic';
+    font-weight:900;
+}
+.InfoTxt span{
+    display:block;
+    font-family:none;
+
+    color:#605e5e;
+}
+
+.moreBtn{
+    width:150px;
+    height:50px;
+    line-height:50px;
+    background-color:#000;
+    border-radius:50px;
+    margin:0 auto;
+    margin-bottom:20px;
+    
+}
+.moreBtn a{
+    color:#fff;
+    display:block;
+    width:100%;
+    transition:all .2s;
+}
+/*후버*/
+.moreBtn a:hover{
+    color:#000;
+    font-weight:900;
+    border:1px solid #000;
+    border-radius:60px;
+    background-color:#fff;
+}
+
+.slick-dots{
+   margin-left:27%;
+}
+.slick-dots li{
+    width:50px;
+    height:30px;
+    display:inline-block;
+    background:url(../images/slideDot.png)no-repeat;
+    background-size:cover;
+}
+.slick-dots  li a{
+    display:block;
+    width:100%;
+}
+
+.ArrowBtn{
+    width:31px;
+    height:39px;
+    background:url(../images/Left.png)no-repeat;
+    position:absolute;
+    top:40%;
+    text-indent:-9999px;
+    cursor:pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    display:none;
+}
+.ArrowBtn a{}
+.Prev{
+    left:0;
+    text-indent:-9999px;
+}
+.Next{
+    right:0;
+    background:url(../images/Right.png)no-repeat;
+}
+
+/*메인컨텐츠02*/
+.mainCon02{
+    padding:30px 0;
+    background:#000;
+    text-align:center;
+    overflow:hidden;
+}
+
+.ProMenu{}
+.ProMenu li{
+    float:left;
+    margin-left:60px;
+    position:relative;
+    overflow:hidden;
+}
+.ProMenu li img{
+    display:block;
+    width:100%;
+    transition:transform 0.5s;
+}
+
+.ProMenu li a{
+    display:block;
+    width:100%;
+}
+.ProMenu li:hover img{
+   transform:scale(1.5);
+}
+.menuW{
+    display:inline-block;
+    position:absolute;
+    top:40%;
+    left:40%;
+    font-size:50px;
+    color:#fff;
+    font-family:'HSBOMBARAM';
+}
+
+/*메인컨텐츠03*/
+.mainCon03{
+    padding:60px 0;
+    text-align:center;
+}
+.mainCon03 h2{
+    margin-bottom:65px;
+}
+
+.mainCon03 .viewBtn{
+    background-color:#000;
+    margin:40px auto;
+}
+
+/*메인컨텐츠04*/
+.mainCon04{
+    text-align:center;
+    width:100%;
+}
+.mainCon04 .mainTit{
+     margin:50px;
+}
+
+.mainCon04 li{
+    display:flex;
+    justify-content:flex-end;
+}
+.mainCon04 li:nth-child(2){
+    flex-direction:row-reverse;
+}
+.mainCon04 li img{
+   width:60%;
+    display:block;
+}
+
+.Newimg01 .First{
+    width:100%;
+    background-color:#da3867;
+    text-align:left;
+    color:#fff;
+    margin-top:0;
+    padding-top:300px;
+    padding-left:10px;
+    position:relative;
+}
+.Newimg01 .smallTxt{
+    margin-top:40px;
+    font-family:'NEXONLV2Gothic';
+    font-weight:800;
+}
+.miniItem{
+    position:absolute;
+    display:inline-block;
+    bottom:40px;
+    right:0;
+}
+
+.smallTxt.Right{
+    position:absolute;
+    display:inline-block;
+    bottom:20px;
+    text-align:right;
+}
+.smallTxt.Right span{
+    display:block;
+    font-family:'HSBOMBARAM';
+}
+
+.Newimg02 .Second{
+    width:100%;
+    background-color:#d53b2e;
+    text-align:left;
+    color:#fff;
+    margin-top:0;
+    padding-top:300px;
+    padding-left:20px;
+    position:relative;
+}
+.Newimg02 .smallTxt{
+    margin-top:40px;
+    font-family:'NEXONLV2Gothic';
+    font-weight:800;
+    
+}
+.miniItem{
+    position:absolute;
+    display:inline-block;
+    bottom:40px;
+    left:60px;
+}
+
+.smallTxt.Left{
+    position:absolute;
+    display:inline-block;
+    bottom:20px;
+    left:40%;
+}
+.smallTxt.Left span{
+    display:block;
+    font-family:'HSBOMBARAM';
+}
+
+.miniItem .smallTxt.Right span::after{
+    content:none;
+}
+.Newimg02 .smallTxt span::after{
+    content:none;
+}
+.miniItem .smallTxt.Left span::after{
+    content:none;
+}
+
+/*메인컨텐츠05*/
+.mainCon05{
+    text-align:center;
+    position:relative;
+}
+.mainCon05 h2{
+    margin-top:100px;
+}
+
+.mainCon05 ul{}
+
+.mainCon05 li{
+    float:left;
+    overflow:hidden;
+    margin-top:50px;
+    margin-left:30px;
+}
+.mainCon05 li img{
+    display:block;
+}
+
+.BottomArrow{
+    position:absolute;
+    right:5px;
+    top:55%;
+}
+
+.BottomArrow a{
+    display:block;
+    width:100%;
+}
+
+.sns{
+    display:inline-block;
+    margin:0 auto;
+}
+.sns li{
+    margin-top:100px;
+}
+.sns li img{
+    display:block;
+}

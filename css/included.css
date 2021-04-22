@@ -1,0 +1,160 @@
+@charset "utf-8";
+#header{}
+
+.hTop{
+    height:100px;
+    line-height:100px;
+    background-color:#000;
+    padding:25px;
+    color:#fff;
+    overflow:hidden;
+}
+.hTop h1{
+    float:left;
+    margin-left:90px;
+    padding-top:25px;
+}
+.hTop h1 img{
+    display:block;
+}
+
+.gnb{
+    float:right;
+    font-size:18px;
+    font-family:'HSBOMBARAM';
+    margin-top:30px;
+    margin-right:130px;
+}
+.gnb li{
+    float:left;
+    margin-left:35px;
+}
+.gnb li a{
+    color:#fff;
+    padding: 10px 10px;
+    position: relative;
+    z-index:0;
+    cursor: pointer;
+}
+
+.gnb li:hover ul {
+  height:120px;
+  line-height:120px;
+  opacity:1;
+  transform: translateY(0);
+}
+
+/*마우스후버*/
+.gnb li a:before,.gnb li a:after{
+    position: absolute;
+    left:0px;
+    width:100%;
+    height:2px;
+    background:#FFF;
+    content:"";
+    opacity:0;
+    transition: all 0.3s;
+}
+.gnb li a:before{
+    top:0px;
+    transform: translateY(10px);
+}
+.gnb li a:after{
+    bottom:0px;
+    transform: translateY(-10px);
+}
+
+.gnb li a:hover:before,.gnb li a:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.gnb li a:before,.gnb li a:after{
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/*서브메뉴*/
+.sub{
+    margin-top:6%;
+    z-index:1;
+    background:#ddd;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position:absolute;
+    transition: all .5s ease;
+    top:35px;
+    width:100%;
+    padding:0 20px;
+}
+.sub li{}
+.sub li a{
+  color: #000;
+}
+
+/*푸터*/
+#footer{
+    padding:20px 0;
+    margin-top:50px;
+    text-align:center;
+    background-color:#131111;
+    color:#dfdfdf;
+    font-family:'NanumBarunGothic';
+}
+
+.footerM{
+    margin-top:30px;
+    font-size:13px;
+}
+.footerM li{
+    display:inline-block;
+    margin-left:20px;
+}
+.footerM li a{
+    color:#dfdfdf;
+    display:block;
+}
+
+.footerBM{
+    line-height:30px;
+    font-size:13px;
+}
+.footerBM a{
+    color:#dfdfdf;
+}
+
+.mail{
+    margin:30px 0;
+}
+.mailBox{
+    margin:0 auto;
+    position:relative;
+    width:100%;
+}
+.mailBox p{
+    width:450px;
+    height:30px;
+    line-height:30px;
+    display:inline-block;
+    border:1px solid #fff;
+    text-indent:-230px;
+}
+.mailBox p:last-child{
+    width:150px;
+    height:40px;
+    line-height:40px;
+    position:absolute;
+    text-indent:0;
+    background-color:#626262;
+    top:-20%;
+    left:58%;
+    border-style:none;
+    cursor:pointer;
+}
+
+.copyRight{
+    padding:30px;
+    font-size:11px;
+    color:#e0e0e0;
+    text-decoration: underline;
+}
